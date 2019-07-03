@@ -6,3 +6,9 @@ spring:
   cloud:
     consul:
       scheme: http
+
+feign:
+  hystrix:
+    enabled: true
+  httpclient:
+    connection-timeout: 1000

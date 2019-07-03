@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author len
  * 2019-07-03
  */
-@FeignClient(value = "server-mars")
+@FeignClient(value = "server-mars",fallbackFactory = FriendServiceFactory.class)
 @RequestMapping("/friends")
 public interface FriendService {
     @GetMapping("{id}")

@@ -17,10 +17,10 @@ public class FriendController {
 
     @GetMapping("{id}")
     public Friend friend(@PathVariable String id) {
+
         val friend = new Friend();
         friend.setId(id);
         friend.setName("name");
-        int i = 0 / 0;
         return friend;
     }
 }
